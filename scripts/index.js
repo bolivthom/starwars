@@ -46,8 +46,8 @@ function search(event) {
     numCards = cards.length;
 
     navItem = document.getElementById('select-card-nav')
-    navItem.innerHTML = capitalize(input.value) 
-    navItem.style.color = "#3B3B3B"
+    navItem.innerHTML = "Select a card"
+    navItem.style.color = "#969696"
 
     for (var i = 0; i < numCards; ++i) {
         document.getElementById(i).style.paddingBottom = "0px"
@@ -95,7 +95,7 @@ function createDropdownList() {
     let nameList = []
     let dropdownElement = document.getElementById('list')
     let cardParent = document.getElementsByClassName('grid')
-    
+
     for (let i = 0; i < cardParent[0].children.length; i++) {
         let listItemName = cardParent[0].children[i].getElementsByClassName("homeworld")[0].textContent
         nameList.push(listItemName)
