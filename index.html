@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Interview Assesment</title>
+    <link href="styles/index.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-button-group">
+                <button id="all-cards-button">
+                    <img src="assets/Card-dark.svg" alt="Card SVG" />
+                    <p class="button-title">All Cards</p>
+                </button>
+                <button id="decks-button">
+                    <img src="assets/Deck.svg" alt="Deck SVG" />
+                    <p class="button-title">Decks</p>
+                </button>
+            </div>
+            <h6 id="header-title"><span style="color:#3B3B3B">SW-</span>API Deck Builder</h6>
+            <button id="user-name-button">
+                <p class="button-title">Bavin Edwards</p>
+            </button>
+        </div>
+        <hr id="nav-hr">
+    </header>
+
+    <nav>
+        <div class="breadcrumb">
+            <a href="#">
+                <p id="all-cards-nav">All Cards</p>
+            </a>
+            <img class="card-image" src="assets/cheveron-right.svg" alt="Card SVG" />
+            <p id="select-card-nav">Select a card</p>
+        </div>
+        <div class="sub-nav">
+            <div class="search-container">
+                <input id="myInput" type="text" placeholder="Search">
+                <div class="card-image-div">
+                    <img id="search-image" class="search-image" src="assets/Search.svg" alt="Card SVG" />
+                </div>
+            </div>
+            <div class="sort-group">
+                <p>Sort by</p>
+                <div class="drop-down">
+                    <div id="list">
+                        <p id="select-option">Homeworld</p>
+                    </div>
+                    <div id="btn">
+                        <img class="card-image" src="assets/cheveron-down.svg" alt="Card SVG" />
+                    </div>
+                </div>
+                <div class="sort">
+                    <div id="asc">
+                        <p>ASC</p>
+                    </div>
+                    <div id="desc">
+                        <p>DESC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="grid">
+
+    </section>
+
+</body>
+<script src="scripts/index.js"></script>
+
+</html>
